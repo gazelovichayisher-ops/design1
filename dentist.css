@@ -1,0 +1,263 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Satoshi", "Satoshi Placeholder", sans-serif;
+}
+
+@property --my-bg-color {
+    syntax: "<color>";
+    inherits: true;
+    initial-value: rgb(48, 114, 255);
+}
+
+@property --my-bg-colors{
+    syntax: "<color>";
+    inherits: true;
+    initial-value: var(--token-41fa3822-f156-42ba-b88f-2e7305f3981f, rgb(245, 248, 255));
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/* ------------------------------------------------------------------------ HEADER----------------------------------------- */
+
+.container{
+    max-width: 1150px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.navbar{
+    position: fixed;
+    background: white;
+    padding-inline: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 250px;
+    padding: 20px 0;
+}
+
+.nav__list{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav__link-logo{
+    display: flex;
+    gap: 5px;
+}
+
+.nav__logo-tish{
+    text-align: center;
+    background: var(--my-bg-color);
+    width: 38px;
+    height: 38px;
+    border-radius: 35%;
+}
+
+.btn{
+    background: var(--my-bg-color);
+    color: white;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 20px;
+    border: none;
+    border: 1px solid blue;
+    transition: 0.5s;
+}
+
+.btn:hover{
+    background: none;
+    color: blue;
+    transform: scale(1.3);
+}
+
+.header__meet{
+    padding-top: 150px;
+    text-align: center;
+}
+
+.header__text{
+    margin-bottom: 20px;
+}
+
+.header__title{
+    font-size: 50px;
+    max-width: 600px;
+    margin-left: 270px;
+    margin-bottom: 20px;
+}
+
+.teem__card-texts{
+    display: flex;
+    gap: 220px;
+    align-items: center;
+}
+
+.teem__cards{
+    margin-top: 50px;
+    text-align: start;
+    display: flex;
+    justify-content: space-between;
+}
+
+.teem__card-img{
+    border-radius: 16px;
+    margin-bottom: 20px;
+    width: 358px;
+    height: 350px;
+}
+
+.teem__card-texts{
+    margin-bottom: 15px;
+}
+
+.teem__card-logo{
+    border: 0.5px solid black;
+    padding: 5px;
+    border-radius: 36px;
+}
+
+.teem__card:hover .teem__card-logo{
+    content: url(img/arrow_forward_16dp_000000_FILL0_wght400_GRAD0_opsz20.svg);
+}
+
+/* ----------------------------------------------------------------------------------- Main ------------------------------------------------------------------ */
+
+.talk{
+    margin-top: 50px;
+    background:rgb(245, 248, 255);
+    padding-block: 50px;
+}
+
+.talk__cards{
+    /* margin-top: 20px; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.talk__card-title{
+    max-width: 500px;
+    font-size: 40px;
+}
+
+.talk__card-cards{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 50px;
+}
+
+.talk__card-card{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.talk__card-loca{
+    padding: 15px;
+    border-radius: 16px;
+    background: var(--my-bg-color);
+}
+
+.talk__card-textes{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.talk__card-two{
+    background: white;
+    padding: 20px;
+}
+
+.talk__form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.talk__card-in{
+    display: flex;
+    gap: 15px;
+}
+
+.talk__card-label{
+    font-size: 30px;
+}
+
+.talk__card-input{
+    margin-top: 20px;   
+    padding: 10px;
+    border: 0.px solid black;
+}
+
+.sub .container{
+    margin-block: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sub__title{
+    max-width: 500px;
+    width: 100%;
+    font-size: 40px;
+}
+
+.sub__in-sub{
+    position: relative;
+    text-align: center;
+    margin-top: 1.5px;
+    margin-left: 160px;
+    padding: 9px;
+    padding-inline: 13px;
+    background: black;
+    color: white;
+}
+
+.sub__in-email{
+    position: absolute;
+    padding: 11px;
+    padding-inline: 30px;
+    /* border: 0.px solid black; */
+    background: var(--my-bg-colors);
+    border-radius: 6px;
+}
+
+.sub__form{
+    margin-bottom: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ------------------------------------------------------- Foooter --------------------------------------------------------------- */
+
+.footer{
+    margin-block: 40px;
+}
+
+.footer__cards{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__card{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: start;
+}
